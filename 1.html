@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>隨機字母抽取</title>
+  <script>
+    function getRandomLetter() {
+      const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      const randomIndex = Math.floor(Math.random() * letters.length);
+      document.getElementById("result").innerText = letters[randomIndex];
+    }
+  </script>
+</head>
+<body>
+  <button onclick="getRandomLetter()">抽取字母</button>
+  <p id="result"></p>
+</body>
+</html>
